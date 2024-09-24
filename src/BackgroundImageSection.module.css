@@ -1,20 +1,56 @@
-.backgroundImage {
+.wrapper {
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  width: 100vw;
+  z-index: -600;
+}
+
+.wrapper img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  column-gap: 50vw;
-  margin-left: -10vw;
+  margin-top: -35vw;
+  margin-left: -5vw;
+  gap: 38vw;
+
+  .image1 {
+    max-height: 32vw;
+  }
+  .image2 {
+    max-height: 53vw;
+    transform: translate3d(0px, 9.82566vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(25deg) skew(0deg, 0deg);
+  }
 }
 
-img {
-  max-width: 33vw;
-}
+.row2 {
+  display: grid;
 
-img:first-child {
-  transform: translate3d(0px, -0.05416vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-}
-
-img:nth-child(2) {
-  transform: translate3d(0px, 9.54882vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(25deg) skew(0deg, 0deg);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1;
+  position: relative;
+  overflow-y: hidden;
+  margin-top: -20vw;
+  margin-left: 23vw;
+  .image3 {
+    max-height: 55vw;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+  }
+  .image4 {
+    height: 50vw;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    transform: (
+      translate3d(0px, 2.24381vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)
+    );
+  }
 }
