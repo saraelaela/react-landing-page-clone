@@ -1,6 +1,5 @@
 import './App.css';
 import BackgroundImageSection from './BackgroundImageSection';
-import styles from './BackgroundImageSection.module.css';
 import Logo from './img/ic-logo.svg';
 import CaseExample1 from './img/phone-1-p-500.png';
 import CaseExample2 from './img/phone-2-p-500.png';
@@ -53,9 +52,9 @@ export default function App() {
             and other design projects.
           </h1>
           <div className="caseWrapper">
-            <img alt="3D Mediaplayer Artwork" src={CaseExample1} />
-            <img alt="3D Mediaplayer Artwork" src={CaseExample2} />
-            <img alt="3D Mediaplayer Artwork" src={CaseExample3} />
+            <img alt="3D CaseExample Artwork" src={CaseExample1} />
+            <img alt="3D CaseExample Artwork" src={CaseExample2} />
+            <img alt="3D CaseExample Artwork" src={CaseExample3} />
           </div>
         </section>
       </main>
